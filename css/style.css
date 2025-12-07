@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+
+:root {
+  --cor-vinho: #8e1c32;
+  --cor-amarelo: #d4a034;
+  --cor-amarelo-escuro: #b6872b;
+  --cor-texto-claro: #ffffff;
+}
+
+
+.bg-econome {
+  background-color: var(--cor-vinho);
+  border-bottom: 2px solid var(--cor-amarelo);
+}
+
+/* LOGO E TEXTO */
+.logo-econome {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--cor-amarelo) !important;
+  text-decoration: none;
+  display: flex;       /* Garante que img e texto fiquem alinhados */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* LINKS DO MENU */
+.nav-link-econome {
+  color: var(--cor-texto-claro) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link-econome:hover, .nav-link-econome.active {
+  color: var(--cor-amarelo) !important;
+}
+
+/* CAMPO DE BUSCA */
+.form-control-econome {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--cor-amarelo);
+  color: white;
+}
+.form-control-econome::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-control-econome:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 0 5px var(--cor-amarelo);
+  border-color: var(--cor-amarelo);
+  outline: none;
+}
+
+/* BOTÕES */
+.btn-outline-econome {
+  color: var(--cor-amarelo);
+  border: 2px solid var(--cor-amarelo);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-outline-econome:hover {
+  background-color: var(--cor-amarelo);
+  color: var(--cor-vinho);
+}
+
+.btn-solid-econome {
+  background-color: var(--cor-amarelo);
+  color: var(--cor-vinho);
+  border: 2px solid var(--cor-amarelo);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-solid-econome:hover {
+  background-color: var(--cor-amarelo-escuro);
+  border-color: var(--cor-amarelo-escuro);
+  color: var(--cor-vinho);
+}
+
+
+.carousel-item rect {
+  fill: var(--cor-vinho);
+}
+
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--cor-amarelo);
+}
+
+
+.marketing .col-lg-4 rect {
+  fill: var(--cor-vinho);
+}
+
+
+.marketing .col-lg-4 h2 {
+  color: var(--cor-vinho);
+  font-weight: bold;
+}
+
+
+.featurette-heading {
+  color: var(--cor-vinho);
+}
+
+
+.featurette-heading span {
+  color: var(--cor-amarelo) !important;
+}
+
+
+.featurette-image rect {
+  fill: var(--cor-vinho); /* Ou use var(--cor-amarelo) se quiser variar */
+}
+
+
+
